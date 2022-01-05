@@ -24,16 +24,10 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="d2bea5fa-89fc-4d34-9946-7c1bb0c12799">
-        <schema name="information_schema" object-types="table, view, sequence, function" />
-        <schema name="pg_catalog" object-types="table, view, sequence, function" />
-        <schema name="pg_toast" object-types="table, view, sequence, function" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="d2bea5fa-89fc-4d34-9946-7c1bb0c12799">
+    <connection id="d4bee63f-e772-422b-b4cd-8dfe6cbf34c9">
       <console name="Connection" type="STANDARD" schema="information_schema" session="Main" />
     </connection>
   </component>
@@ -41,7 +35,10 @@
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="d2bea5fa-89fc-4d34-9946-7c1bb0c12799" />
+    <connection id="d4bee63f-e772-422b-b4cd-8dfe6cbf34c9" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="d4bee63f-e772-422b-b4cd-8dfe6cbf34c9" dataset="information_schema.sql_features" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -72,7 +69,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="d2bea5fa-89fc-4d34-9946-7c1bb0c12799" active="true">
+      <connection id="d4bee63f-e772-422b-b4cd-8dfe6cbf34c9" active="true">
         <database>
           <name value="Connection" />
           <description value="" />
