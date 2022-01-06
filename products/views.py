@@ -8,12 +8,14 @@ from rest_framework import status
 
 from .models import Product
 from .serializers import ProductSerializer
+from .producer import send
 
 
 class ProductViewSet(ViewSet):
     def list(self, request):
         products = Product.objects.all()
         serializer = ProductSerializer(products, many=True)
+        send()
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request):
