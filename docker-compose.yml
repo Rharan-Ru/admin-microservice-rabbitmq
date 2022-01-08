@@ -8,6 +8,10 @@ services:
       - .:/app
     ports:
       - "8001:8001"
+    deploy:
+      resources:
+        limits:
+          memory: 300M
     depends_on:
       - db_admin
   db_admin:
@@ -19,11 +23,15 @@ services:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-#  queue:
-#    build: .
-#    command: python consumer.py
-#    depends_on:
-#      - db_admin
+  queue:
+    build: .
+    command: python consumer.py
+    deploy:
+      resources:
+        limits:
+          memory: 300M
+    depends_on:
+      - db_admin
 networks:
   default:
     external: true
